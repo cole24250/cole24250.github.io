@@ -1,13 +1,78 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Thumbspanel</title>
-  </head>
-  <body>
-    <h1>Thumbspanel</h1>
-    <p><a href="http://172.21.3.4:5000/tutd?thumb=up">up</a></p>
-    <p><a href="http://172.21.3.4:5000/tutd?thumb=wiggle">wiggle</a>
-    <p><a href="http://172.21.3.4:5000/tutd?thumb=down">down</a></p>
-  </body>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Thumbspanel</title>
+          <style media="screen">
+            div {
+                border: 1px solid black;
+                background-color: green;
+                margin: 5px;
+                padding: 5px;
+            }
+            #headerBox {}
+            .linksBox, .textBox {
+              border-radius: 20px;
+            }
+            .textBox {
+              overflow: auto;
+            }
+          .textBox img {
+            width: 25%;
+            float: left;
+            clear: left;
+          }
+            a {}
+            a:visited {}
+            a:hover {}
+            body {
+                background-color: black;
+            }
+            #content {
+              border: 2px dotted red;
+              width: 60%;
+              margin: auto;
+              background-color: blue;
+            }
+
+            @media (max-width: 600px) {
+              #content {
+                width: 100%;
+              }
+              body {
+                background-color: white;
+
+              }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="content">
+            <div id="headerBox">
+                <h1>Thumbspanel</h1>
+            </div>
+            <div class="linksBox">
+                <p><a href="http://172.21.3.4:5000/tutd?thumb=up">UP</a></p>
+                <p><a href="http://172.21.3.4:5000/tutd?thumb=wiggle">WIGGLE</a></p>
+                <p><a href="http://172.21.3.4:5000/tutd?thumb=down">DOWN</a></p>
+            </div>
+            <div class="textBox">
+              <img src="img/slayerLogo.png" alt="slayer slayerLogo">
+              <p>This is one of the best bands</p>
+              <img src="img/joinOrDie.jpg" alt="Join or die flag">
+              <p>This is one of the best flags</p>
+              <img src="img/tonyHawk.jpg" alt="Tony Hawk proskater">
+              <p>This is the best game</p>
+            </div>
+            <div class="linksBox">
+                <p><a href="http://172.21.3.4:5000/">LINK LINK LINK</a></p>
+                <p><a href="http://172.21.3.4:5000/">LINK LINK LINK</a></p>
+                <p><a href="http://172.21.3.4:5000/">LINK LINK LINK</a></p>
+            </div>
+        </div>
+    </body>
+
 </html>
